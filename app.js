@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog');  //Import routes for "catalog" area of site
 var helmet = require('helmet');
-
+var mongoose = require('mongoose');
 // Create the Express application object
 var app = express();
 
