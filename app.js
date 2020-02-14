@@ -12,9 +12,17 @@ var helmet = require('helmet');
 // Create the Express application object
 var app = express();
 
+
+// Set up mongoose connection
+var dev_db_url = 'mongodb+srv://DeadPrez001:zakariya@zakscluster0-3rxf3.azure.mongodb.net/local_library?retryWrites=true&w=majority'
+var mongoDB = process.env.MONGODB_URI || dev_db_url;
+
 //Set up mongoose connection
-var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://DeadPrez001:zakariya@zakscluster0-3rxf3.azure.mongodb.net/local_library?retryWrites=true&w=majority';
+//
+//var mongoose = require('mongoose');
+//var mongoDB = 'mongodb+srv://DeadPrez001:zakariya@zakscluster0-3rxf3.azure.mongodb.net/local_library?retryWrites=true&w=majority';
+
+
 //mongoose.connect(mongoDB, { useNewUrlParser: true });
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 

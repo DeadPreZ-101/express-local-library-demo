@@ -1,6 +1,9 @@
 {
-    "name": "local-library-demo",
+    "name": "express-local-library-demo",
     "version": "0.0.0",
+    "engines": {
+        "node": "13.8.0"
+    },
     "private": true,
     "scripts": {
         "start": "node ./bin/www",
@@ -17,7 +20,7 @@
         "jade": "~1.11.0",
         "mongoose": "^5.8.11",
         "morgan": "~1.9.1",
-        "pug": "2.0.0-beta11"
+        "pug": "^2.0.4"
     },
     "devDependencies": {
         "nodemon": "^2.0.2"
